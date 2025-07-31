@@ -10,21 +10,23 @@
   <header class="header">
     <h1>📝 Create a New Blog Post</h1>
     <div id="user-info">
-      <button onclick="window.location.href='dashboard.html'">← Back to Dashboard</button>
+      <span id="username-display"></span>
+      <button id="logout-btn">Logout</button>
     </div>
   </header>
 
   <main class="post-editor">
     <form id="post-form">
       <input type="text" id="post-title" placeholder="Post Title" required />
-
       <textarea id="post-content" placeholder="Write your story..." rows="12" required></textarea>
-
       <button type="submit">Publish</button>
     </form>
   </main>
 
   <script src="js/utils.js"></script>
+  <script>
+    const user = initPage();
+  </script>
   <script src="js/post.js"></script>
 </body>
 </html>
