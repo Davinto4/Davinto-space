@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DavintoSpace | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>DavintoSpace</h1>
+    <div id="user-info">
+      <span id="username-display"></span>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <!-- Global Chat Section -->
+    <section class="chat-section">
+      <h2>🌐 Global Chat</h2>
+      <div id="chat-box" class="chat-box"></div>
+
+      <form id="chat-form">
+        <input type="text" id="chat-message" placeholder="Type your message..." required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <h2>📝 Blog Feed</h2>
+      <button onclick="window.location.href='post.html'">+ New Post</button>
+      <div id="blog-list" class="blog-list"></div>
+    </section>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
