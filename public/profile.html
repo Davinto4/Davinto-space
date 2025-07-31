@@ -10,7 +10,8 @@
   <header class="header">
     <h1>👤 Your Profile</h1>
     <div id="user-info">
-      <button onclick="window.location.href='dashboard.html'">← Back to Dashboard</button>
+      <span id="username-display"></span>
+      <button id="logout-btn">Logout</button>
     </div>
   </header>
 
@@ -30,6 +31,9 @@
   </main>
 
   <script src="js/utils.js"></script>
+  <script>
+    const user = initPage();
+  </script>
   <script src="js/profile.js"></script>
 </body>
 </html>
