@@ -16,18 +16,15 @@
   </header>
 
   <main class="dashboard">
-    <!-- Global Chat Section -->
     <section class="chat-section">
       <h2>🌐 Global Chat</h2>
       <div id="chat-box" class="chat-box"></div>
-
       <form id="chat-form">
         <input type="text" id="chat-message" placeholder="Type your message..." required />
         <button type="submit">Send</button>
       </form>
     </section>
 
-    <!-- Blog Section -->
     <section class="blog-section">
       <h2>📝 Blog Feed</h2>
       <button onclick="window.location.href='post.html'">+ New Post</button>
@@ -36,6 +33,9 @@
   </main>
 
   <script src="js/utils.js"></script>
+  <script>
+    const user = initPage();
+  </script>
   <script src="js/chat.js"></script>
   <script src="js/blog.js"></script>
 </body>
