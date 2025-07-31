@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile | DavintoSpace</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>👤 Your Profile</h1>
+    <div id="user-info">
+      <button onclick="window.location.href='dashboard.html'">← Back to Dashboard</button>
+    </div>
+  </header>
+
+  <main class="profile-page">
+    <section class="profile-details">
+      <h2>Account Info</h2>
+      <p><strong>Username:</strong> <span id="profile-username">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="profile-email">Loading...</span></p>
+    </section>
+
+    <section class="profile-posts">
+      <h2>Your Blog Posts</h2>
+      <div id="user-posts" class="blog-list">
+        <!-- User's blog posts will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
