@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* General Layout */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #3b3b3b;
+}
+
+.header button {
+  padding: 8px 12px;
+  background: #f44336;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background: #d32f2f;
+}
+
+/* Form Containers */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+form {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  margin-bottom: 10px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.chat-section, .blog-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  min-width: 300px;
+}
+
+/* Chat Box */
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.chat-box p {
+  margin-bottom: 8px;
+}
+
+.chat-box span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Blog List */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog-list .post-preview {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.blog-list .post-preview:hover {
+  background: #f1f1f1;
+}
+
+/* Blog Post Page */
+.blog-post {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#post-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Profile Page */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-details, .profile-posts {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+}
